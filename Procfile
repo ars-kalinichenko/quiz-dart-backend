@@ -1,1 +1,1 @@
-web: ./dart-sdk/bin/dart run
+web: pub cache clean -f; ./dart-sdk/bin/dart run
