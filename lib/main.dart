@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'dart:developer';
+import 'dart:io';
 import 'package:style_dart/style_dart.dart';
-
+import 'package:args/args.dart';
 
 class HelloEndpoint extends Endpoint {
   @override
@@ -16,8 +17,11 @@ class MyServer extends StatelessComponent {
   @override
   Component build(BuildContext context) {
     return Server(
+
         /// default localhost:80
-        httpService: DefaultHttpServiceHandler(host: "0.0.0.0", port: 8080),
+        httpService: DefaultHttpServiceHandler(
+            host: "0.0.0.0",
+            port: int.tryParse(Platform.environment['PORT'] ?? "8080")),
         children: [Route("hello", root: HelloEndpoint())]);
   }
 }
