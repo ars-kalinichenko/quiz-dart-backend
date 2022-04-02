@@ -1,1 +1,1 @@
-web: pub cache clean -f; ./dart-sdk/bin/dart run
+web: ls /app/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-38.0.0 || ls ./dart-sdk/bin/ ||  ./dart-sdk/bin/dart run
