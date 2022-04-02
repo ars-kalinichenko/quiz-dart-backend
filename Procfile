@@ -1,1 +1,1 @@
-web:dart run
+web: ./dart-sdk/bin/dart run
