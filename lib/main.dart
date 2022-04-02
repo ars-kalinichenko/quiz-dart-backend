@@ -17,7 +17,7 @@ class MyServer extends StatelessComponent {
   Component build(BuildContext context) {
     return Server(
         /// default localhost:80
-        httpService: DefaultHttpServiceHandler(host: "0.0.0.0", port: 8080),
+        httpService: DefaultHttpServiceHandler(host: "0.0.0.0", port: 80),
         children: [Route("hello", root: HelloEndpoint())]);
   }
 }
