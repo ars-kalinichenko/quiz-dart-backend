@@ -1,1 +1,1 @@
-web: ./dart-sdk/bin/pub cache clean -f; ./dart-sdk/bin/pub get;  ls ./.pub-cache/hosted/pub.dartlang.org ||  ./dart-sdk/bin/dart run
+web: ./dart-sdk/bin/pub cache clean -f; ./dart-sdk/bin/pub get;  ls ./.pub-cache/hosted/pub.dartlang.org;  ./dart-sdk/bin/dart run
