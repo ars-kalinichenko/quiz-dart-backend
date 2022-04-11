@@ -1,13 +1,11 @@
 import 'dart:async';
-import 'dart:developer';
 import 'dart:io';
 import 'package:style_dart/style_dart.dart';
-import 'package:args/args.dart';
 
 class HelloEndpoint extends Endpoint {
   @override
   FutureOr<Object> onCall(Request request) {
-    return "So crazy!";
+    return "<h1> Hello world </h1>";
   }
 }
 
@@ -27,6 +25,6 @@ class MyServer extends StatelessComponent {
 }
 
 void runApp() {
-  print("Strat...");
+  print("Start...");
   runService(MyServer());
 }
