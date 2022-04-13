@@ -1,4 +1,4 @@
-import 'package:quiz_app/main.dart';
+import 'package:quiz_app/server.dart';
 
 void main(List<String> args) {
   runApp();

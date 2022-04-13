@@ -10,4 +10,7 @@ dev_dependencies:
   lints: ^1.0.0
   test: ^1.16.0
 dependencies: 
+  postgres: ^2.4.3
+  postgresql2: ^1.0.2
   style_dart: ^1.0.2+8
+  uri: ^1.0.0
